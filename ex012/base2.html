@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8";>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex012.2</title>
+    <script src="pt02.js">
+
+    </script>
+    <style>
+        div.btn{
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(to top, rgb(184, 184, 184), rgb(143, 141, 141));
+            color: rgb(114, 114, 114);
+            text-align: center;
+            padding: 15px;
+            font-size: 2em;
+            border: 2px solid rgb(77, 77, 77);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hover no JS</h1>
+    <hr>
+    <div class="btn" onmouseover="mouseOn(this)" onmouseout="mouseOut(this)">
+        1
+    </div><div class="btn" onmouseover="mouseOn(this)" onmouseout="mouseOut(this)">
+        2
+    </div><div class="btn" onmouseover="mouseOn(this)" onmouseout="mouseOut(this)">
+        3
+    </div>
+</body>
+
+</html>

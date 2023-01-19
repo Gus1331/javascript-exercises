@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ex022.0</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(42, 179, 42);
+            font-family: cursive;
+            box-sizing: border-box;
+        }
+        h1{
+            background-color: aliceblue;
+            border-radius: 20px;
+            width: 30%;
+            height: 70px;
+            padding: 15px;
+            font-size: 2.2em;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+        }
+        hr{
+            border: 1px solid white;
+        }
+        main{
+            margin: 50px auto;
+            width: 300px;
+            position: relative;
+        }
+        span{
+            width: 80%;
+            padding: 5px 15px;
+            position: absolute;
+            background-color: aliceblue;
+            border-radius: 20px;
+            border: 1px solid black;
+            min-height: 1.5em;
+            cursor: text;
+        }
+        </style>
+</head>
+<body onload="blink();">
+    <h1>Typing...</h1>
+    <hr>
+
+    <main id="chat">
+
+        <span style="margin-left: -20px;">Hello, how are you?</span>
+        <span style="top: 3em; margin-right: -20px;" id="msg" onclick="newMessage(); type = false;"></span>
+
+    </main>
+
+    <script src="type.js" defer></script>
+</body>
+</html>
